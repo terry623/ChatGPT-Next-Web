@@ -545,9 +545,6 @@ export function Chat(props: {
               }
             >
               <div className={styles["chat-message-container"]}>
-                <div className={styles["chat-message-avatar"]}>
-                  <Avatar role={message.role} />
-                </div>
                 {(message.preview || message.streaming) && (
                   <div className={styles["chat-message-status"]}>
                     {Locale.Chat.Typing}
